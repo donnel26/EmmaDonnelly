@@ -8,71 +8,138 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 40px 25px;
+      padding: 50px 30px;
       line-height: 1.7;
       color: #333;
+      font-size: 16px;
     }
 
+    /* Header */
+
     header {
-      margin-bottom: 45px;
+      margin-bottom: 55px;
     }
 
     .site-header {
       display: flex;
       align-items: center;
-      gap: 25px;
+      gap: 28px;
     }
 
     .headshot {
-      width: 150px;
-      height: 150px;
+      width: 135px;
+      height: 135px;
       object-fit: cover;
       border-radius: 50%;
     }
 
     h1 {
-      margin-bottom: 5px;
-      font-size: 2.2em;
+      margin: 0 0 6px 0;
+      font-size: 2.25em;
+      font-weight: 600;
+      letter-spacing: -0.5px;
     }
 
     .subtitle {
-      margin-top: 0;
+      margin: 0 0 8px 0;
       color: #666;
-      font-size: 1.1em;
+      font-size: 1.05em;
+      line-height: 1.5;
     }
 
+    .contact {
+      font-size: 0.95em;
+    }
+
+    .contact a {
+      color: #2b5d7d;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Navigation */
+
     nav {
-      margin-top: 25px;
-      padding-top: 15px;
+      margin-top: 30px;
+      padding-top: 14px;
       border-top: 1px solid #ddd;
     }
 
     nav a {
-      margin-right: 22px;
+      margin-right: 28px;
       text-decoration: none;
-      color: #444;
-      font-weight: bold;
+      color: #333;
+      font-size: 0.95em;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #2b5d7d;
     }
 
+    /* Main content */
+
     h2 {
-      margin-top: 40px;
-      font-size: 1.5em;
+      margin-top: 0;
+      margin-bottom: 22px;
+      font-size: 1.55em;
+      font-weight: 600;
     }
+
+    p {
+      margin-bottom: 22px;
+    }
+
+    .job-market {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid #eee;
+      font-size: 0.97em;
+    }
+
+    .job-market strong {
+      font-weight: 600;
+    }
+
+    /* General links */
 
     a {
       color: #2b5d7d;
     }
 
-    .job-market {
-      margin-top: 25px;
-      font-weight: bold;
+    /* Mobile */
+
+    @media (max-width: 600px) {
+
+      body {
+        padding: 30px 20px;
+      }
+
+      .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+      }
+
+      .headshot {
+        width: 120px;
+        height: 120px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      nav a {
+        display: inline-block;
+        margin-right: 18px;
+        margin-bottom: 8px;
+      }
     }
   </style>
 </head>
@@ -86,12 +153,20 @@
     <img src="headshot.jpg" alt="Emma Donnelly" class="headshot">
 
     <div class="header-text">
+
       <h1>Emma Donnelly</h1>
 
       <p class="subtitle">
         Ph.D. Candidate in Agricultural Economics<br>
         Purdue University
       </p>
+
+      <div class="contact">
+        <a href="mailto:donnel26@purdue.edu">donnel26@purdue.edu</a>
+        &nbsp;·&nbsp;
+        <a href="cv.pdf">CV</a>
+      </div>
+
     </div>
 
   </div>
@@ -112,24 +187,24 @@
   <p>
     I am an applied environmental and community economist and a Ph.D. candidate
     in Agricultural Economics at Purdue University. My research examines how
-    environmental risks and policies shape household decisions and local economic
-    outcomes. I am particularly interested in how environmental change affects
-    communities through housing markets, residential sorting, and the distribution
-    of economic impacts across households.
+    environmental risks and policies shape household decisions and local
+    economic outcomes. I am particularly interested in how environmental change
+    affects communities through housing markets, residential sorting, and the
+    distribution of economic impacts across households.
   </p>
 
   <p>
     My dissertation examines how flood risk and flood buyout programs affect
-    residential decisions and neighborhood housing markets. In my job market paper,
-    I study how exposure to flood buyouts affects neighborhood housing values and
-    how these effects vary across households and communities using a general
-    equilibrium residential sorting model. My other research examines the economic
-    value of environmental quality and ecosystem services, including water quality
-    improvements, recreation, and wildlife management.
+    residential decisions and neighborhood housing markets. In my job market
+    paper, I study how exposure to flood buyouts affects neighborhood housing
+    values and how these effects vary across households and communities using a
+    general equilibrium residential sorting model. My other research examines
+    the economic value of environmental quality and ecosystem services,
+    including water quality improvements, recreation, and wildlife management.
   </p>
 
   <p class="job-market">
-    I am on the job market in the 2026–2027 academic year.
+    <strong>I am on the job market in the 2026–2027 academic year.</strong>
   </p>
 
 </main>
