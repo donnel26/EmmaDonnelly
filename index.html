@@ -20,6 +20,19 @@
       margin-bottom: 45px;
     }
 
+    .site-header {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .headshot {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
     h1 {
       margin-bottom: 5px;
       font-size: 2.2em;
@@ -67,12 +80,21 @@
 <body>
 
 <header>
-  <h1>Emma Donnelly</h1>
 
-  <p class="subtitle">
-    Ph.D. Candidate in Agricultural Economics<br>
-    Purdue University
-  </p>
+  <div class="site-header">
+
+    <img src="headshot.jpg" alt="Emma Donnelly" class="headshot">
+
+    <div class="header-text">
+      <h1>Emma Donnelly</h1>
+
+      <p class="subtitle">
+        Ph.D. Candidate in Agricultural Economics<br>
+        Purdue University
+      </p>
+    </div>
+
+  </div>
 
   <nav>
     <a href="index.html">About</a>
@@ -80,34 +102,35 @@
     <a href="teaching.html">Teaching</a>
     <a href="cv.html">CV</a>
   </nav>
+
 </header>
 
 <main>
 
-<h2>About Me</h2>
+  <h2>About Me</h2>
 
-<p>
-I am an applied environmental and community economist and a Ph.D. candidate
-in Agricultural Economics at Purdue University. My research examines how
-environmental risks and policies shape household decisions and local economic
-outcomes. I am particularly interested in how environmental change affects
-communities through housing markets, residential sorting, and the distribution
-of economic impacts across households.
-</p>
+  <p>
+    I am an applied environmental and community economist and a Ph.D. candidate
+    in Agricultural Economics at Purdue University. My research examines how
+    environmental risks and policies shape household decisions and local economic
+    outcomes. I am particularly interested in how environmental change affects
+    communities through housing markets, residential sorting, and the distribution
+    of economic impacts across households.
+  </p>
 
-<p>
-My dissertation examines how flood risk and flood buyout programs affect
-residential decisions and neighborhood housing markets. In my job market paper,
-I study how exposure to flood buyouts affects neighborhood housing values and
-how these effects vary across households and communities using a general
-equilibrium residential sorting model. My other research examines the economic
-value of environmental quality and ecosystem services, including water quality
-improvements, recreation, and wildlife management.
-</p>
+  <p>
+    My dissertation examines how flood risk and flood buyout programs affect
+    residential decisions and neighborhood housing markets. In my job market paper,
+    I study how exposure to flood buyouts affects neighborhood housing values and
+    how these effects vary across households and communities using a general
+    equilibrium residential sorting model. My other research examines the economic
+    value of environmental quality and ecosystem services, including water quality
+    improvements, recreation, and wildlife management.
+  </p>
 
-<p class="job-market">
-I am on the job market in the 2026–2027 academic year.
-</p>
+  <p class="job-market">
+    I am on the job market in the 2026–2027 academic year.
+  </p>
 
 </main>
 
