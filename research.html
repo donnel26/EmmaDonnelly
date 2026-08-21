@@ -92,10 +92,11 @@
     }
 
     h3 {
-      margin-top: 38px;
-      margin-bottom: 10px;
-      font-size: 1.2em;
+      margin-top: 42px;
+      margin-bottom: 14px;
+      font-size: 1.3em;
       font-weight: 600;
+      color: #2b5d7d;
     }
 
     h4 {
@@ -109,49 +110,52 @@
       margin-bottom: 20px;
     }
 
-    /* Research introduction */
-
     .research-intro {
-      font-size: 1.02em;
       margin-bottom: 35px;
     }
 
     /* Dissertation section */
 
-    .research-section {
+    .dissertation {
       background: #f7f9fa;
-      border: 1px solid #e1e6e9;
       border-left: 4px solid #2b5d7d;
-      padding: 28px 32px;
-      margin: 35px 0 50px 0;
+      padding: 5px 25px 20px 25px;
+      margin-top: 20px;
     }
 
-    .research-section h3 {
-      margin-top: 0;
-      margin-bottom: 18px;
+    .dissertation h3 {
+      margin-top: 20px;
+    }
+
+    .dissertation-intro {
+      margin-bottom: 28px;
+    }
+
+    .paper-title {
+      margin-top: 4px;
+      margin-bottom: 8px;
+      font-size: 0.98em;
+    }
+
+    .paper-title a {
       color: #2b5d7d;
+      text-decoration: none;
     }
 
-    .research-section h4 {
-      margin-top: 30px;
+    .paper-title a:hover {
+      text-decoration: underline;
     }
-
-    /* Research questions */
 
     .question {
       font-weight: 600;
       margin-bottom: 12px;
     }
 
-    /* Progress */
-
     .progress {
       font-size: 0.94em;
       color: #666;
       margin-top: 10px;
     }
-
-    /* Paper links */
 
     .links {
       margin-top: 8px;
@@ -168,32 +172,36 @@
       text-decoration: underline;
     }
 
-    /* Other research */
+    /* Other research section */
 
     .other-research {
       margin-top: 50px;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
     }
 
-    .other-research h3 {
-      margin-bottom: 15px;
+    .research-area {
+      margin-top: 28px;
     }
-
-    /* Individual papers */
 
     .paper {
-      margin-bottom: 20px;
-    }
-
-    .paper-title {
-      margin-bottom: 4px;
+      margin-bottom: 22px;
     }
 
     .paper-journal {
       color: #555;
       margin-top: 0;
+      margin-bottom: 0;
     }
 
-    /* General links */
+    .paper a {
+      color: #2b5d7d;
+      text-decoration: none;
+    }
+
+    .paper a:hover {
+      text-decoration: underline;
+    }
 
     a {
       color: #2b5d7d;
@@ -222,14 +230,14 @@
         font-size: 2em;
       }
 
-      .research-section {
-        padding: 22px 20px;
-      }
-
       nav a {
         display: inline-block;
         margin-right: 18px;
         margin-bottom: 8px;
+      }
+
+      .dissertation {
+        padding: 5px 18px 18px 18px;
       }
     }
   </style>
@@ -276,32 +284,35 @@
   <h2>Research</h2>
 
   <p class="research-intro">
-    I am an applied environmental and community economist. My research examines
-    how environmental risks and policies shape household decisions, housing
-    markets, and local economic outcomes. I am particularly interested in
-    climate adaptation, residential mobility and sorting, and the distribution
-    of environmental and policy impacts across households and communities.
+    My research lies at the intersection of environmental and resource
+    economics, housing and residential choice, and community economic
+    development. I study how environmental risks and policies shape household
+    decisions, housing markets, and local communities, with a particular
+    interest in climate adaptation, managed retreat, and the distribution of
+    environmental and economic impacts across households. My work uses applied
+    econometric, nonmarket valuation, and structural methods to study these
+    questions.
   </p>
 
 
   <!-- ==================== DISSERTATION ==================== -->
 
-  <section class="research-section">
+  <div class="dissertation">
 
     <h3>
       Dissertation: Flood Buyouts, Housing Markets, Residential Sorting, and Welfare
     </h3>
 
-    <p>
+    <p class="dissertation-intro">
       My dissertation examines the economic effects of flood buyout programs on
       housing markets, residential sorting, and household welfare. I study the
       Harris County Flood Buyout Program in Texas, focusing on how voluntary and
       mandatory buyouts affect property values, household residential choices,
       neighborhood composition, and the distribution of economic impacts across
       households. The research program combines housing-market capitalization,
-      residential sorting, and equilibrium analysis to examine how managed retreat
-      changes both the value of residential locations and the households who choose
-      to live in them.
+      residential sorting, and equilibrium analysis to examine how managed
+      retreat changes both the value of residential locations and the households
+      who choose to live in them.
     </p>
 
 
@@ -311,19 +322,25 @@
       How do flood buyouts affect housing values?
     </p>
 
+    <p class="paper-title">
+      <em>Property Value Impacts of Flood Buyouts: Checkerboard Effect,
+      Flood Risk, and Green Space.</em>
+    </p>
+
     <p>
       My first dissertation paper examines how voluntary and mandatory flood
       buyouts are capitalized into nearby property values. Using property
-      transaction data, I estimate how housing values vary with proximity to and
-      exposure to buyout activity. I examine whether these effects differ by
-      buyout type, distance from buyout properties, and the intensity of nearby
-      buyout activity. This analysis provides evidence on how housing markets
-      respond to the neighborhood changes associated with managed retreat.
+      transaction data, I estimate how housing values vary with proximity to
+      and exposure to buyout activity. I examine whether these effects differ
+      by buyout type, distance from buyout properties, and the intensity of
+      nearby buyout activity. This analysis provides evidence on how housing
+      markets respond to the neighborhood changes associated with managed
+      retreat.
     </p>
 
     <p class="progress">
-      <strong>Progress:</strong> Hedonic estimates completed; currently developing
-      the paper for submission.
+      <strong>Progress:</strong> Hedonic estimates completed; currently
+      developing the paper for submission.
     </p>
 
     <div class="links">
@@ -338,32 +355,30 @@
       Who wants to live in neighborhoods affected by flood buyouts?
     </p>
 
-    <p>
-      My second dissertation paper examines how households value neighborhoods
-      affected by flood buyouts and how these preferences differ across household
-      groups. I estimate a general equilibrium residential sorting model that
-      allows preferences for voluntary and mandatory buyout exposure to vary
-      across income and race/ethnicity. The model allows me to estimate household
-      preferences and willingness to pay for buyout exposure, while examining how
-      heterogeneous preferences shape residential sorting across neighborhoods.
-      Treating voluntary and mandatory buyouts as distinct neighborhood
-      characteristics also allows me to examine whether households respond
-      differently to different forms of managed retreat.
+    <p class="paper-title">
+      <em>The Economic Effects of a Voluntary and Mandatory Flood Buyout
+      Program: Evidence from an Equilibrium Sorting Model.</em>
     </p>
 
-  
-  <p class="progress">
-    <strong>Progress:</strong> Structural model estimation in progress;
-    preliminary results available.
-  </p>
+    <p>
+      My second dissertation paper examines how households value neighborhoods
+      affected by flood buyouts and how these preferences differ across
+      household groups. I estimate a general equilibrium residential sorting
+      model that allows preferences for voluntary and mandatory buyout exposure
+      to vary across income and race/ethnicity. The model allows me to estimate
+      household preferences and willingness to pay for buyout exposure, while
+      examining how heterogeneous preferences shape residential sorting across
+      neighborhoods. Treating voluntary and mandatory buyouts as distinct
+      neighborhood characteristics also allows me to examine whether households
+      respond differently to different forms of managed retreat.
+    </p>
 
-  <div class="links">
-    <a href="sorting-poster.pdf" target="_blank" rel="noopener noreferrer">
-      View poster
-    </a>
-  </div>
+    <p class="progress">
+      <strong>Progress:</strong> Structural model estimation in progress;
+      preliminary results available.
+    </p>
 
-    
+
     <h4>3. Equilibrium Effects and Welfare</h4>
 
     <p class="question">
@@ -371,122 +386,132 @@
     </p>
 
     <p>
-      I will extend the residential sorting analysis to examine how flood buyouts
-      affect household relocation, neighborhood composition, housing demand, and
-      welfare in equilibrium.
+      I will extend the residential sorting analysis to examine how flood
+      buyouts affect household relocation, neighborhood composition, housing
+      demand, and welfare in equilibrium.
     </p>
 
     <p class="progress">
       <strong>Progress:</strong> In development.
     </p>
 
-  </section>
+  </div>
 
 
   <!-- ==================== OTHER RESEARCH ==================== -->
 
-  <section class="other-research">
+  <div class="other-research">
 
     <h3>Other Research</h3>
 
     <p>
-      My broader research examines the economic value of environmental quality,
-      ecosystem services, and outdoor recreation, as well as how environmental
-      policies affect household behavior and resource use.
+      My broader research examines the economic value of environmental quality
+      and ecosystem services, as well as how environmental policies affect
+      household behavior and resource use.
     </p>
 
 
-     <h4>Environmental Quality and Residential Mobility</h4>
+    <div class="research-area">
 
-  <p>
-    My published research examines how improvements in water quality affect
-    residential mobility and property-related welfare. This work uses stated
-    preference and revealed preference approaches to estimate the economic value
-    of environmental remediation in Great Lakes Areas of Concern.
-  </p>
+      <h4>Environmental Quality and Residential Mobility</h4>
 
-  <div class="paper">
-    <p class="paper-title">
-      <strong>[Paper]</strong>
-      <a href="https://www.cambridge.org/core/journals/agricultural-and-resource-economics-review/article/residential-mobility-and-the-value-of-water-quality-improvements-in-the-milwaukee-estuary-area-of-concern/123E64D69B421EF561E400F3D42D1A21"
-         target="_blank"
-         rel="noopener noreferrer">
-        <em>Residential Mobility and the Value of Water Quality Improvements
-        in the Milwaukee Estuary Area of Concern.</em>
-      </a>
-    </p>
+      <p>
+        My published research examines how improvements in water quality affect
+        residential mobility and property-related welfare. This work uses
+        stated preference and revealed preference approaches to estimate the
+        economic value of environmental remediation in Great Lakes Areas of
+        Concern.
+      </p>
 
-    <p class="paper-journal">
-      <em>Agricultural and Resource Economics Review</em>, 2023.
-    </p>
+      <div class="paper">
+        <p class="paper-title">
+          <strong>[Paper]</strong>
+          <a href="https://www.cambridge.org/core/journals/agricultural-and-resource-economics-review/article/residential-mobility-and-the-value-of-water-quality-improvements-in-the-milwaukee-estuary-area-of-concern/123E64D69B421EF561E400F3D42D1A21"
+             target="_blank"
+             rel="noopener noreferrer">
+            <em>Residential Mobility and the Value of Water Quality Improvements
+            in the Milwaukee Estuary Area of Concern.</em>
+          </a>
+        </p>
+
+        <p class="paper-journal">
+          <em>Agricultural and Resource Economics Review</em>, 2023.
+        </p>
+      </div>
+
+      <div class="paper">
+        <p class="paper-title">
+          <strong>[Paper]</strong>
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S221242842300021X"
+             target="_blank"
+             rel="noopener noreferrer">
+            <em>The Economic Benefits of Remediation Actions in the Waukegan
+            Harbor Area of Concern.</em>
+          </a>
+        </p>
+
+        <p class="paper-journal">
+          <em>Water Resources and Economics</em>, 2024.
+        </p>
+      </div>
+
+    </div>
+
+
+    <div class="research-area">
+
+      <h4>Ecosystem Services, Recreation, and Environmental Valuation</h4>
+
+      <p>
+        My research also examines the economic value of ecosystem services,
+        environmental amenities, and outdoor recreation. This work includes
+        applications of stated preference and nonmarket valuation methods to
+        understand how individuals value environmental resources and
+        recreational opportunities.
+      </p>
+
+      <div class="paper">
+        <p class="paper-title">
+          <strong>[Paper]</strong>
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0921800926000790"
+             target="_blank"
+             rel="noopener noreferrer">
+            <em>The Exchange Value of Ecosystem Services from Multi-Site
+            Recreation.</em>
+          </a>
+        </p>
+
+        <p class="paper-journal">
+          <em>Ecological Economics</em>, 2026.
+        </p>
+      </div>
+
+      <div class="paper">
+        <p class="paper-title">
+          <strong>[Working paper]</strong>
+          <a href="https://ideas.repec.org/p/ags/aaea26/404451.html"
+             target="_blank"
+             rel="noopener noreferrer">
+            <em>Willingness to Pay for Sandhill Crane Hunting.</em>
+          </a>
+        </p>
+      </div>
+
+      <div class="paper">
+        <p class="paper-title">
+          <strong>[Revise &amp; Resubmit]</strong>
+          <em>Estimating Congestion Effects from Stated Preference Data.</em>
+        </p>
+
+        <p class="paper-journal">
+          Revise and Resubmit at the
+          <em>American Journal of Agricultural Economics</em>.
+        </p>
+      </div>
+
+    </div>
+
   </div>
-
-  <div class="paper">
-    <p class="paper-title">
-      <strong>[Paper]</strong>
-      <a href="https://www.sciencedirect.com/science/article/abs/pii/S221242842300021X"
-         target="_blank"
-         rel="noopener noreferrer">
-        <em>The Economic Benefits of Remediation Actions in the Waukegan
-        Harbor Area of Concern.</em>
-      </a>
-    </p>
-
-    <p class="paper-journal">
-      <em>Water Resources and Economics</em>, 2024.
-    </p>
-  </div>
-
-
-  <h4>Ecosystem Services, Recreation, and Environmental Valuation</h4>
-
-  <p>
-    My research also examines the economic value of ecosystem services,
-    environmental amenities, and outdoor recreation. This work includes
-    applications of stated preference and nonmarket valuation methods to
-    understand how individuals value environmental resources and recreational
-    opportunities.
-  </p>
-
-  <div class="paper">
-    <p class="paper-title">
-      <strong>[Paper]</strong>
-      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0921800926000790"
-         target="_blank"
-         rel="noopener noreferrer">
-        <em>The Exchange Value of Ecosystem Services from Multi-Site Recreation.</em>
-      </a>
-    </p>
-
-    <p class="paper-journal">
-      <em>Ecological Economics</em>, 2026.
-    </p>
-  </div>
-
-  <div class="paper">
-    <p class="paper-title">
-      <strong>[Working paper]</strong>
-      <a href="https://ideas.repec.org/p/ags/aaea26/404451.html"
-         target="_blank"
-         rel="noopener noreferrer">
-        <em>Willingness to Pay for Sandhill Crane Hunting.</em>
-      </a>
-    </p>
-  </div>
-
-  <div class="paper">
-    <p class="paper-title">
-      <strong>[Revise &amp; Resubmit]</strong>
-      <em>Estimating Congestion Effects from Stated Preference Data.</em>
-    </p>
-
-    <p class="paper-journal">
-      Revise and Resubmit at the
-      <em>American Journal of Agricultural Economics</em>.
-    </p>
-  </div>
-    
-  </section>
 
 </main>
 
